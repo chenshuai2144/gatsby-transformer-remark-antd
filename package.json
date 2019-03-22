@@ -49,6 +49,7 @@
   "scripts": {
     "build": "babel src --out-dir . --ignore **/__tests__",
     "prepare": "cross-env NODE_ENV=production npm run build",
+    "pub": "cross-env NODE_ENV=production npm run build && npm run publisg",
     "watch": "babel -w src --out-dir . --ignore **/__tests__"
   }
 }
